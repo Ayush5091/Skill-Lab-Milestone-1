@@ -1,0 +1,139 @@
+.head{
+    list-style: none; 
+    font-size: 29;
+   background-color: rgb(0, 184, 246);
+   
+}
+.head li{
+
+   display: inline;
+   font-size: 25px;
+   padding: 180px;
+}
+.head li a{
+   text-decoration: none;
+}
+
+h1{
+   padding-left: 42%;
+   display: flex;
+   align-items: center;
+}
+
+#cakes {
+   text-align: center;
+   padding: 20px;
+   background-color: #f9f9f9;
+}
+
+.cake-gallery {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 80px; 
+}
+
+.cake {
+   border: 1px solid #ddd;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+   width: 200px;
+   text-align: center;
+   transition: transform 0.3s ease;
+}
+
+.cake:hover {
+   transform: scale(1.05);
+}
+
+.cake img {
+   max-width: 100%;
+   border-radius: 10px;
+   margin-bottom: 10px;
+}
+
+
+.cake h3 {
+   font-size: 1.4em;
+   margin: 10px 0;
+   color: #333;
+}
+
+.cake p {
+   font-size: 1.1em;
+   color: #555;
+}
+
+
+.cake button {
+   background-color: #28a745;
+   color: white;
+   border: none;
+   padding: 10px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 1em;
+}
+
+.cake button:hover {
+   background-color: #218838;
+}
+
+
+
+.cake[data-id="1"], .cake[data-id="2"], .cake[data-id="3"], .cake[data-id="4"], .cake[data-id="5"], .cake[data-id="6"], .cake[data-id="7"], .cake[data-id="8"] {
+   border: 2px solid #001988; 
+}
+
+
+#cart {
+   max-width: 600px;         
+   margin: 0 auto;           
+   padding: 20px;
+   background-color: #f9f9f9;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   text-align: center;
+}
+
+#cart h2 {
+   font-size: 2em;
+   margin-bottom: 20px;
+   color: #333;
+}
+
+.cart-items {
+   margin-bottom: 20px;
+   padding: 10px;
+   border-bottom: 1px solid #ddd;
+}
+
+#total-price {
+   font-size: 1.5em;
+   color: #333;
+   font-weight: bold;
+}
+
+#checkout {
+   background-color: #28a745;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   font-size: 1.2em;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#checkout:hover {
+   background-color: #218838;
+}
+
+@media (max-width: 600px) {
+   #cart {
+       width: 90%;
+   }
+}
+

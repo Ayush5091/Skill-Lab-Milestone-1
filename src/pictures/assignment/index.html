@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    
+    <header>
+        <h1 style="color: rgb(28, 4, 136);">Cake Paradise</h1>
+        
+            <ul class="head">
+                <li><a href="#">Cake'n'Bake</a></li>
+                
+                <li><a href="#cakes">Cakes</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        
+    </header>
+
+    
+    <section id="cakes">
+        <h2>Our Cakes</h2>
+        <div class="cake-gallery">
+            <div class="cake" data-id="1">
+                
+                <img src="choco.webp" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>₹550.00</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <div class="cake" data-id="2">
+                <img src="van.webp" alt="Vanilla Cake">
+                <h3>Vanilla Cake</h3>
+                <p>₹480.00</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+            <div class="cake" data-id="3">
+                <img src="straw.webp" alt="Strawberry Cake">
+                <h3>Strawberry Cake</h3>
+                <p>₹500.00</p>
+                <button onclick="addToCart(3)">Add to Cart</button>
+            </div>
+            <div class="cake" data-id="4">
+                <img src="butter.webp" alt="Butterscotch Cake">
+                <h3>Butterscotch Cake</h3>
+                <p>₹600.00</p>
+                <button onclick="addToCart(4)">Add to Cart</button>
+            </div>
+            <div class="cake" data-id="5">
+                <img src="red.webp" alt="Red Velvet Cake">
+                <h3>Red Velvet Cake</h3>
+                <p>₹580.00</p>
+                <button onclick="addToCart(5)">Add to Cart</button>
+            </div>
+            <div class="cake" data-id="6">
+                <img src="pine.webp" alt="Pineapple Cake">
+                <h3>Pineapple Cake</h3>
+                <p>₹450.00</p>
+                <button onclick="addToCart(6)">Add to Cart</button>
+            </div>
+            <div class="cake" data-id="7">
+                <img src="black.webp" alt="Black Forest Cake">
+                <h3>Black Forest Cake</h3>
+                <p>₹650.00</p>
+                <button onclick="addToCart(7)">Add to Cart</button>
+            </div>
+            <div class="cake" data-id="8">
+                <img src="blue.jpg" alt="Blueberry Cake">
+                <h3>Blueberry Cake</h3>
+                <p>₹540.00</p>
+                <button onclick="addToCart(8)">Add to Cart</button>
+            </div>
+            
+        </div>
+    </section>
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+        </div>
+        <p>Total: <span id="total-price">₹0.00</span></p>
+        <button id="checkout">Checkout</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
